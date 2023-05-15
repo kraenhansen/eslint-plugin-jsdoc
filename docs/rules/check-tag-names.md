@@ -773,6 +773,10 @@ function quux () {
 }
 // Settings: {"jsdoc":{"tagNamePreference":{"todo":{"message":"Please don't use todo"}}}}
 // Message: Please don't use todo
+
+/** @abstract */
+// "jsdoc/check-tag-names": ["error"|"warn", {"typed":true}]
+// Message: '@abstract' is redundant outside of ambient (`declare`/`.d.ts`) contexts when using a type system.
 ````
 
 

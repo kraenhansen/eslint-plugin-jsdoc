@@ -50,7 +50,6 @@ const typedTagsUnnecessaryOutsideDeclare = new Set([
   'method',
   'mixes',
   'mixin',
-  'module',
   'name',
   'namespace',
   'override',
@@ -144,7 +143,7 @@ export default iterateJsdoc(({
     }
 
     if (node === null) {
-      return false;
+      return true;
     }
 
     if (context.getFilename().endsWith('.d.ts') && [

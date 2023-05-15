@@ -1056,6 +1056,24 @@ export default {
         },
       },
     },
+    {
+      code: `
+        /** @abstract */
+      `,
+      errors: [
+        {
+          line: 2,
+          message: '\'@abstract\' is redundant outside of ambient (`declare`/`.d.ts`) contexts when using a type system.',
+        },
+      ],
+      options: [
+        {
+          typed: true,
+        },
+      ],
+      output: `
+      `,
+    },
   ],
   valid: [
     {
